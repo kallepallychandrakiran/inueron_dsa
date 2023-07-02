@@ -1,0 +1,90 @@
+// Question 1: Check whether a given number is positive, negative, or zero using an if-else statement.
+
+public class CheckNumber {
+
+  public static void main(String[] args) {
+    int number = 10;
+
+    if (number > 0) {
+      System.out.println("The number is positive.");
+    } else if (number < 0) {
+      System.out.println("The number is negative.");
+    } else {
+      System.out.println("The number is zero.");
+    }
+  }
+}
+
+// Question 2: Print the Fibonacci series up to a given number using a for loop.
+
+public class FibonacciSeries {
+
+  public static void main(String[] args) {
+    int number = 10;
+    int previousNumber = 0;
+    int currentNumber = 1;
+
+    System.out.println(previousNumber);
+    System.out.println(currentNumber);
+
+    for (int i = 2; i < number; i++) {
+      int nextNumber = previousNumber + currentNumber;
+      System.out.println(nextNumber);
+      previousNumber = currentNumber;
+      currentNumber = nextNumber;
+    }
+  }
+}
+
+// Question 3: Calculate the average of a list of numbers using a do-while loop.
+
+public class AverageOfNumbers {
+
+  public static void main(String[] args) {
+    int[] numbers = {10, 20, 30, 40, 50};
+    int sum = 0;
+    int count = 0;
+
+    do {
+      sum += numbers[count];
+      count++;
+    } while (count < numbers.length);
+
+    double average = sum / count;
+    System.out.println("The average is " + average);
+  }
+}
+
+// Question 4: Find the largest of three numbers using nested if-else statements.
+
+public class LargestOfThreeNumbers {
+
+  public static void main(String[] args) {
+    int number1 = 10;
+    int number2 = 20;
+    int number3 = 30;
+
+    if (number1 > number2 && number1 > number3) {
+      System.out.println("The largest number is " + number1);
+    } else if (number2 > number1 && number2 > number3) {
+      System.out.println("The largest number is " + number2);
+    } else {
+      System.out.println("The largest number is " + number3);
+    }
+  }
+}
+
+// Question 5: Declare and initialize variables of different data types (int, double, String) with appropriate identifiers.
+
+public class Variables {
+
+  public static void main(String[] args) {
+    int myInt = 10;
+    double myDouble = 10.5;
+    String myString = "Hello, world!";
+
+    System.out.println("The value of myInt is " + myInt);
+    System.out.println("The value of myDouble is " + myDouble);
+    System.out.println("The value of myString is " + myString);
+  }
+}
